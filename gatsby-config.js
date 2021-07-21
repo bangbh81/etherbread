@@ -4,6 +4,8 @@ module.exports = {
     title: "etherbread",
   },
   plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
