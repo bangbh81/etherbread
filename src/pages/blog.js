@@ -14,6 +14,7 @@ const BlogPage = ({ data }) => {
   );
 };
 
+//Use page queries for page components.
 export const query = graphql`
   query {
     allFile(filter: { extension: { eq: "mdx" } }) {
