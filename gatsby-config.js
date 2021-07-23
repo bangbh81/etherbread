@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://etherbread.com",
-    title: "Etherbread",
+    title: "Etherbread yum!!",
     description: "Etherbread.com",
   },
   plugins: [
@@ -29,6 +29,13 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      },
     },
   ],
 };
